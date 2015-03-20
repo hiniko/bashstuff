@@ -6,3 +6,5 @@
 # Author: Paul Rose
 # Email: projects@paulrose.me
 # Repo: https://github.com/niko-niko/bashstuff
+
+source ./lib/colours.sh
