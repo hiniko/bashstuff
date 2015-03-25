@@ -8,6 +8,7 @@
 # Repo: https://github.com/niko-niko/bashstuff
 
 BASHSTUFF=$(dirname "${BASH_SOURCE[0]}")
+BASHSTUFFVERSION='0.1'
 
 source ./lib/colours.sh
 source ./lib/common.sh
