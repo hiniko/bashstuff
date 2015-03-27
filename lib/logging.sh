@@ -17,8 +17,9 @@ log()  {
 
 info() { log "${purple}INFO${white}" "$@" "${off}"; }
 debug() { if [ ! -z $DEBUG ]; then log "${cyan}DEBUG${white}" "$@" "${off}"; fi; }
-error() { log "${red}ERROR${white}" "$@" "${off}"; }
+error() { log "${red}${b_white}ERROR${white}" "$@" "${off}"; }
 test() { log "${yellow}TEST${white}" "$@" "${off}"; }
 fatal() { log "${red}FATAL${white}" "$@" "${off}"; exit 1; }
+
 
 debug Will log to $BASHSTUFFLOG
