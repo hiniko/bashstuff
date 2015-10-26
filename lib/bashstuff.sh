@@ -24,9 +24,9 @@ __file="${__dir}/$(basename "${BASH_SOURCE[0]}")"
 __base="$(basename ${__file} .sh)"
 args="${1:-}"
 
-source $BASHSTUFF/lib/colours.sh
-source $BASHSTUFF/lib/common.sh
-source $BASHSTUFF/lib/logging.sh
+source $BASHSTUFF/colours.sh
+source $BASHSTUFF/common.sh
+source $BASHSTUFF/logging.sh
 
 if [[ $DEBUG = true ]]; then
     set -o xtrace
