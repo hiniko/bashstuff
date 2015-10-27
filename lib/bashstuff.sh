@@ -24,12 +24,11 @@ __file="${__dir}/$(basename "${BASH_SOURCE[0]}")"
 __base="$(basename ${__file} .sh)"
 args="${1:-}"
 
-source $BASHSTUFF/colours.sh
 source $BASHSTUFF/common.sh
+source $BASHSTUFF/colours.sh
 source $BASHSTUFF/logging.sh
 
 if [[ $DEBUG = true ]]; then
-    set -o xtrace
     debug ${white}Debugging Enabled\!
 	debug ${bi_yellow}BASH${bi_red}Stuff${off} included\! Running from ${cyan}$BASHSTUFF${off}
 fi
